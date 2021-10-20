@@ -2,10 +2,10 @@ const { pokemon, Sequelize } = require("../models");
 
 exports.catch = async (req, res) => {
   const catchPokemon= () => {
-    return Math.random() > 0.5 ? true: false
+     return Math.floor(Math.random() * 6);
   }
 
-  if(catchPokemon() === true){
+  if(catchPokemon() > 3){
     res.send({
     status : 200,
     message: 'NICE CATCH!'

@@ -1,0 +1,25 @@
+{
+  "name": "pokemon-backend-phincon",
+  "version": "1.0.0",
+  "description": "Backend for pokemon-phincon",
+  "main": "app.js",
+  "author": "Galang Harindito",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "http-error": "^0.0.6",
+    "mysql2": "^2.3.2",
+    "nodemon": "^2.0.13",
+    "sequelize": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

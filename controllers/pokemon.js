@@ -31,7 +31,11 @@ exports.storePokemon = async (req, res) => {
 };
 
 exports.findAll = async (req, res) => {
-  const data = await pokemon.findAll();
+  const data = await pokemon.findAll({
+    order: [
+        ['createdAt', 'DESC']
+    ]
+});
 
   res.send({
     status : 200,
